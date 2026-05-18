@@ -107,5 +107,8 @@ Time(ms), Weight(g), EMG_Peak, EMG_RMS, EMG_Raw
 -
 
 **Версия**: v1.0 (2024-12-24)  
+By holodoff
+By lissatsa
+
 
 
