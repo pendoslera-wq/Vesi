@@ -32,7 +32,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 HX711 scale;
 
 // ============= EMG (AD8232) - PINOUT ESP32-S3 =============
-#define EMG_SIGNAL_PIN 4  // GPIO4 (ADC вход) - там раньше были данные!
+#define EMG_SIGNAL_PIN 4  // GPIO4 (ADC вход) 
 // #define EMG_LO_PLUS 5     // GPIO5 - не используется (нет вывода на датчике)
 // #define EMG_LO_MINUS 6    // GPIO6 - не используется (нет вывода на датчике)
 
@@ -113,7 +113,7 @@ void setup() {
   delay(1000);
   
   Serial.println("\n╔═══════════════════════════════════════════════╗");
-  Serial.println("║   ESP32-S3 ВEСИ + EMG Датчик (Гибрид)        ║");
+  Serial.println("║   ESP32-S3 ВEСЫ + EMG Датчик (Гибрид)        ║");
   Serial.println("║   Тестирование мышечной силы и активации      ║");
   Serial.println("╚═══════════════════════════════════════════════╝\n");
 
@@ -430,7 +430,7 @@ void updateDisplay() {
       display.println("EMG[OK]");
     }
 
-    // ========== ВЕС в НЬЮТОНАХ (большие буквы) ==========
+    // ========== ВЕС в НЬЮТОНАХ ==========
     display.setTextSize(3);
     float weightN = (displayedWeight / GRAMS_PER_KG) * GRAVITY;  // Перевод в ньютоны
     char weightStr[12];
