@@ -1,4 +1,5 @@
  🏋️ VESI + EMG System v1.0
+ 
  👨‍💼 Авторство
 
 Изготовитель - Holodoff
